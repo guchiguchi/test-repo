@@ -1,0 +1,19 @@
+---
+title: "TOKYO SKY TREE"
+author: "guchiguchi"
+date: "2018/5/26"
+output: html_document
+---
+  
+#MAY 26, 2018
+
+```{r}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lng=139.8085117,17, lat=35.7100627, 
+             popup='<a href="http://www.tokyo-skytree.jp/en/">TOKYO SKY TREE</a>')
+m
+```
+
